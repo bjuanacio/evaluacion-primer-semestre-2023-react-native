@@ -1,0 +1,49 @@
+{
+  "name": "my-app-native-two",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest",
+    "server": "node server/server.js"
+  },
+  "dependencies": {
+    "@expo/webpack-config": "^18.0.1",
+    "expo": "~48.0.15",
+    "expo-status-bar": "~1.4.4",
+    "json-server": "^0.17.3",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.71.7",
+    "react-native-web": "~0.18.10",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@testing-library/react-native": "^12.1.2",
+    "@types/jest": "^29.5.1",
+    "@types/react": "~18.0.14",
+    "@types/styled-components": "^5.1.26",
+    "@types/styled-components-react-native": "^5.2.1",
+    "typescript": "^4.9.4"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "setupFilesAfterEnv": [
+    "@testing-library/jest-native/extend-expect"
+  ],
+  "private": true
+}
